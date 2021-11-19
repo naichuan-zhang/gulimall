@@ -136,7 +136,7 @@ create table oms_order_return_apply
    sku_price            decimal(18,4) comment '商品单价',
    sku_real_price       decimal(18,4) comment '商品实际支付单价',
    reason               varchar(200) comment '原因',
-   description述         varchar(500) comment '描述',
+   description         varchar(500) comment '描述',
    desc_pics            varchar(2000) comment '凭证图片，以逗号隔开',
    handle_note          varchar(500) comment '处理备注',
    handle_man           varchar(200) comment '处理人员',
