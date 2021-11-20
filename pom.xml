@@ -8,10 +8,6 @@
     <name>gulimall</name>
     <description>谷粒商城-聚合服务</description>
     <packaging>pom</packaging>
-    <properties>
-        <java.version>1.8</java.version>
-        <spring-cloud.version>2020.0.4</spring-cloud.version>
-    </properties>
 
     <modules>
         <module>gulimall-coupon</module>
@@ -19,6 +15,7 @@
         <module>gulimall-order</module>
         <module>gulimall-product</module>
         <module>gulimall-ware</module>
+        <module>renren-fast</module>
     </modules>
 
 </project>
