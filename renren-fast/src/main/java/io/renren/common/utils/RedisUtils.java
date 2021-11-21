@@ -34,7 +34,7 @@ public class RedisUtils {
 
     public final static long DEFAULT_EXPIRE = 60 * 60 * 24;
     public final static long NON_EXPIRE = -1;
-    private final static Gson gson = new Gson();
+    private final static Gson GSON = new Gson();
 
     public void set(String key, Object value, long expire) {
         valueOperations.set(key, toJson(value));
@@ -86,7 +86,7 @@ public class RedisUtils {
                 object instanceof Double || object instanceof Boolean || object instanceof String) {
             return String.valueOf(object);
         }
-        return gson.toJson(object);
+        return GSON.toJson(object);
     }
 
     /**
@@ -98,7 +98,7 @@ public class RedisUtils {
      * @return
      */
     private <T> T fromJson(String json, Class<T> clazz) {
-        return gson.fromJson(json, clazz);
+        return GSON.fromJson(json, clazz);
     }
 
 }
