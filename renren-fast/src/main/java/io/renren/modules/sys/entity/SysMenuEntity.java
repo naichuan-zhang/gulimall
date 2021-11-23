@@ -40,6 +40,11 @@ public class SysMenuEntity implements Serializable {
     private String name;
 
     /**
+     * 菜单URL
+     */
+    private String url;
+
+   /**
      * 授权（多个用逗号分隔，如：user:list，user:create）
      */
     private String perms;
