@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class MapUtils extends HashMap<String, Object> {
 
     @Override
-    public Object put(String key, Object value) {
+    public HashMap<String, Object> put(String key, Object value) {
         super.put(key, value);
         return this;
     }
