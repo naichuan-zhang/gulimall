@@ -25,7 +25,7 @@ public class TokenGenerator {
         }
         StringBuilder sb = new StringBuilder(data.length * 2);
         for (byte b : data) {
-            sb.append(HEX_CODE[b >> 4] & 0xF);
+            sb.append(HEX_CODE[(b >> 4) & 0xF]);
             sb.append(HEX_CODE[(b & 0xF)]);
         }
         return sb.toString();

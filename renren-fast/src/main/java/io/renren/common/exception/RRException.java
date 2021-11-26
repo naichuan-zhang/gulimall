@@ -17,6 +17,8 @@ public class RRException extends RuntimeException {
     public RRException(String msg, Throwable e) {
         super(msg, e);
         this.msg = msg;
+        // 展示错误信息
+        e.printStackTrace();
     }
 
     public RRException(String msg, int code) {
@@ -29,6 +31,8 @@ public class RRException extends RuntimeException {
         super(msg, e);
         this.msg = msg;
         this.code = code;
+        // 展示错误信息
+        e.printStackTrace();
     }
 
     public String getMsg() {
