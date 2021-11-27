@@ -59,4 +59,14 @@ public class OAuth2Realm extends AuthorizingRealm {
         }
         return new SimpleAuthenticationInfo(user, accessToken, getName());
     }
+
+    /**
+     * 配置该realm支持OAuthToken
+     * @param token
+     * @return
+     */
+    @Override
+    public boolean supports(AuthenticationToken token) {
+        return token.getClass().isAssignableFrom(OAuth2Token.class);
+    }
 }
