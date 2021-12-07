@@ -1,6 +1,6 @@
 package com.naichuan.common.xss;
 
-import io.renren.common.exception.RRException;
+import com.naichuan.common.exception.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**
